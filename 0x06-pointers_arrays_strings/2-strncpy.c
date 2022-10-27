@@ -1,6 +1,6 @@
 /**
  *
- *  * _strncat - a function that concatenates two strings.
+ *  * _strncpy - a function that copys the strings.
  *
  *   * @dest: an input string
  *
@@ -12,7 +12,7 @@
  *
  *       */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 
 {
 
@@ -34,9 +34,7 @@ char *_strncat(char *dest, char *src, int n)
 
 
 
-					while (*dest)
-
-								dest++;
+					srclen++;
 
 
 
@@ -56,8 +54,6 @@ char *_strncat(char *dest, char *src, int n)
 
 
 
-									*dest = '\0';
-
-										return (temp);
+									return (temp);
 
 }
